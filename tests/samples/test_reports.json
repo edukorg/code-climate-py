@@ -1,0 +1,44 @@
+[
+  {
+    "id": "5e822176f155b24d66663b05",
+    "type": "test_reports",
+    "attributes": {
+      "branch": "rs-not-potato",
+      "commit_sha": "a3b3d16a166498f1bd3667092d1a9085bb9a11cb",
+      "committed_at": "2020-03-30T16:35:38.000Z",
+      "covered_percent": 95.9972067039106,
+      "rating": {
+        "path": "/",
+        "letter": "D",
+        "measure": {
+          "value": 95.9972067039106,
+          "unit": "percent"
+        },
+        "pillar": "Test Coverage"
+      },
+      "received_at": "2020-03-30T16:42:30.115Z",
+      "state": "done"
+    }
+  },
+  {
+    "id": "5e84fde55b96b02a856694d2",
+    "type": "test_reports",
+    "attributes": {
+      "branch": "jd-potato",
+      "commit_sha": "8cd889431340efbf3375416666102d0b78c0792b",
+      "committed_at": "2020-04-01T20:40:45.000Z",
+      "covered_percent": 96.99860400186134,
+      "rating": {
+        "path": "/",
+        "letter": "A",
+        "measure": {
+          "value": 96.99860400186134,
+          "unit": "percent"
+        },
+        "pillar": "Test Coverage"
+      },
+      "received_at": "2020-04-01T20:47:33.787Z",
+      "state": "done"
+    }
+  }
+]

@@ -80,3 +80,53 @@ class UnsupportedModelMixin:
 
     def _detail(self, resource_class):
         raise exceptions.UnsupportedModelException()
+
+
+class TestReport(UnsupportedModelMixin, BaseModel):
+    _RESOURCE_NAME = 'test_reports.json'
+
+    @property
+    def branch(self):
+        return self['branch']
+
+    @property
+    def commit_sha(self):
+        return self['commit_sha']
+
+    @property
+    def committed_at(self):
+        return _as_date(self['committed_at'])
+
+    @property
+    def covered_percent(self):
+        return self['covered_percent'] / 100
+
+    @property
+    def rating(self):
+        return Rating(data=self['rating'])
+
+    @property
+    def received_at(self):
+        return _as_date(self['received_at'])
+
+    @property
+    def state(self):
+        return self['state']
+
+
+class Rating(EmbeddedModel):
+    @property
+    def path(self):
+        return self['path']
+
+    @property
+    def letter(self):
+        return self['letter']
+
+    @property
+    def pillar(self):
+        return self['pillar']
+
+    @property
+    def measure(self):
+        return self['measure']['value'] / 100
