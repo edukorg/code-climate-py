@@ -82,6 +82,18 @@ class UnsupportedModelMixin:
         raise exceptions.UnsupportedModelException()
 
 
+class Organization(BaseModel):
+    _RESOURCE_NAME = 'orgs'
+
+    @property
+    def name(self):
+        return self['name']
+
+    @property
+    def repositories(self):
+        yield from self._related(resource_class=Repository)
+
+
 class Repository(BaseModel):
     _RESOURCE_NAME = 'repos'
 
