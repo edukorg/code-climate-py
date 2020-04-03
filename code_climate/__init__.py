@@ -1,4 +1,5 @@
 from code_climate.models import (
+    Repository,
     TestReport,
     Rating,
 )
@@ -12,6 +13,7 @@ name = "code_climate"
 version = '0.0.1'
 
 __all__ = (
+    'Repository',
     'TestReport',
     'Rating',
     'TokenUndefinedException',

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "900a76232df2736347000001",
+    "type": "repos",
+    "attributes": {
+      "analysis_version": 3385,
+      "badge_token": "18096d266f46d9c98dd8",
+      "branch": "master",
+      "created_at": "2018-10-15T20:08:03.732Z",
+      "github_slug": "twinpeaks\/potato",
+      "human_name": "potato",
+      "last_activity_at": "2019-10-15T20:09:41.846Z",
+      "vcs_database_id": "76872388",
+      "vcs_host": "https://github.com",
+      "score": 3.14
+    },
+    "relationships": {
+      "latest_default_branch_snapshot": {
+        "data": {
+          "id": "596a762c9373ca000100177e",
+          "type": "snapshots"
+        }
+      },
+      "latest_default_branch_test_report": {
+        "data": null
+      },
+      "account": {
+        "data": {
+          "id": "596b70adb79d8f147b000002",
+          "type": "orgs"
+        }
+      }
+    },
+    "links": {
+      "self": "https:\/\/codeclimate.com\/repos\/900a76232df2736347000001",
+      "services": "https:\/\/api.codeclimate.com\/v1\/repos\/900a76232df2736347000001\/services",
+      "web_coverage": "https:\/\/codeclimate.com\/repos\/900a76232df2736347000001\/coverage",
+      "web_issues": "https:\/\/codeclimate.com\/repos\/900a76232df2736347000001\/issues"
+    },
+    "meta": {
+      "permissions": {
+        "admin": true
+      }
+    }
+  },
+  {
+    "id": "696a76232df2736347000001",
+    "type": "repos",
+    "attributes": {
+      "analysis_version": 3385,
+      "badge_token": "16096d266f46b7c68dd4",
+      "branch": "master",
+      "created_at": "2017-07-15T20:08:03.732Z",
+      "github_slug": "twinpeaks\/ranchorosa",
+      "human_name": "ranchorosa",
+      "last_activity_at": "2017-07-15T20:09:41.846Z",
+      "vcs_database_id": "92872343",
+      "vcs_host": "https://github.com",
+      "score": 1.36
+    },
+    "relationships": {
+      "latest_default_branch_snapshot": {
+        "data": {
+          "id": "596a762c9373ca000100177e",
+          "type": "snapshots"
+        }
+      },
+      "latest_default_branch_test_report": {
+        "data": null
+      },
+      "account": {
+        "data": {
+          "id": "596b70adb79d8f147b000002",
+          "type": "orgs"
+        }
+      }
+    },
+    "links": {
+      "self": "https:\/\/codeclimate.com\/repos\/696a76232df2736347000001",
+      "services": "https:\/\/api.codeclimate.com\/v1\/repos\/696a76232df2736347000001\/services",
+      "web_coverage": "https:\/\/codeclimate.com\/repos\/696a76232df2736347000001\/coverage",
+      "web_issues": "https:\/\/codeclimate.com\/repos\/696a76232df2736347000001\/issues"
+    },
+    "meta": {
+      "permissions": {
+        "admin": true
+      }
+    }
+  }
+]
