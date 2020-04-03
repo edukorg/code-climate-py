@@ -82,6 +82,68 @@ class UnsupportedModelMixin:
         raise exceptions.UnsupportedModelException()
 
 
+class Repository(BaseModel):
+    _RESOURCE_NAME = 'repos'
+
+    @property
+    def analysis_version(self):
+        return self['analysis_version']
+
+    @property
+    def badge_token(self):
+        return self['badge_token']
+
+    @property
+    def branch(self):
+        return self['branch']
+
+    @property
+    def created_at(self):
+        return _as_date(self['created_at'])
+
+    @property
+    def github_slug(self):
+        return self['github_slug']
+
+    @property
+    def human_name(self):
+        return self['human_name']
+
+    @property
+    def last_activity_at(self):
+        return _as_date(self['last_activity_at'])
+
+    @property
+    def vcs_database_id(self):
+        return self['vcs_database_id']
+
+    @property
+    def vcs_host(self):
+        return self['vcs_host']
+
+    @property
+    def score(self):
+        return self['score']
+
+    @classmethod
+    def find(cls, github_slug):
+        params = {
+            'github_slug': github_slug,
+        }
+        try:
+            return next(super(Repository, cls).list(params=params))
+        except StopIteration:
+            raise exceptions.DoesNotExist()
+
+    @classmethod
+    def list(cls, params=None):
+        raise exceptions.UnsupportedModelException()
+
+    @property
+    def test_reports(self):
+        yield from self._related(resource_class=TestReport)
+
+
 class TestReport(UnsupportedModelMixin, BaseModel):
     _RESOURCE_NAME = 'test_reports.json'
 
