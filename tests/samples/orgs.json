@@ -1,0 +1,32 @@
+[
+  {
+    "id": "58da767f6261830264001e69",
+    "type": "orgs",
+    "attributes": {
+      "name": "joaodaher"
+    },
+    "meta": {
+      "counts": {
+        "repos": 1
+      },
+      "permissions": {
+        "admin": true
+      }
+    }
+  },
+  {
+    "id": "5d01529fe561597696000da8",
+    "type": "orgs",
+    "attributes": {
+      "name": "eduK"
+    },
+    "meta": {
+      "counts": {
+        "repos": 44
+      },
+      "permissions": {
+        "admin": true
+      }
+    }
+  }
+]
