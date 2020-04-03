@@ -1,3 +1,5 @@
+from code_climate.models import (
+)
 from code_climate.exceptions import (
     UnsupportedModelException,
     TokenUndefinedException,
